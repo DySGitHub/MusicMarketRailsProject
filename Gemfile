@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
     gem 'rails',        '5.0.0'
     gem 'puma',         '3.4.0'
@@ -8,6 +8,7 @@ source 'https://rubygems.org'
     gem 'jquery-rails', '4.1.1'
     gem 'turbolinks',   '5.0.0'
     gem 'jbuilder',     '2.4.1'
+    gem 'bootstrap-sass',    '3.3.6' 
 
     group :development, :test do
       gem 'sqlite3', '1.3.11'
