@@ -15,7 +15,7 @@
         @user = User.new(secure_params)
         if @user.save
              remember @user       #  NEW LINE
-      flash[:success] = "Welcome to the Sample App!"    # NEW LINE
+      flash[:success] = "Welcome to MusicMarket!"    # NEW LINE
            redirect_to @user
         else
  render 'new' 
