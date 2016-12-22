@@ -7,27 +7,27 @@
       </h2>
         		<div id="articles" class="clearfix">
         <article>
-                    <%= link_to image_tag("p1.jpg", alt: "Pianos"), "pianolinktba"  %>
+                    <%= link_to image_tag("p1.jpg", alt: "Pianos"), pianos_path  %>
             <h3>Pianos</h3>
             We have various types of Pianos in stock, from timeless grand pianos to the more modern keyboards of today. Have a look at whats in stock today.
             <p></p>
-                    <%= link_to "View All", root_path, class: "btn btn-lg btn-primary" %>
+                    <%= link_to "View All", pianos_path, class: "btn btn-lg btn-primary" %>
 
             </article>
         <article>
-<%= link_to image_tag("g1.jpg", alt: "Guitars"), "guitarlinktba" %>
+<%= link_to image_tag("g1.jpg", alt: "Guitars"), guitars_path %>
             <h3>Guitars</h3>
             We have various types of Guitars in stock, from acoustic guitars to electric guitars. Have a look at whats in stock today.
             <p></p>
-                    <%= link_to "View All", root_path, class: "btn btn-lg btn-primary" %>
+                    <%= link_to "View All", guitars_path, class: "btn btn-lg btn-primary" %>
 
 </article>
 <article>
-             <%= link_to image_tag("a1.jpg", alt: "Accessories"), "acclinktba" %>
+             <%= link_to image_tag("a1.jpg", alt: "Accessories"), accessories_path %>
     <h3>Accessories</h3>
     We have various types of accessories for different instruments in stock, from guitar picks to piano covers. Have a look at whats in stock today.
     <p></p>
-                        <%= link_to "View All", root_path, class: "btn btn-lg btn-primary" %>
+                        <%= link_to "View All", accessories_path, class: "btn btn-lg btn-primary" %>
 
             </article>
         </div>
