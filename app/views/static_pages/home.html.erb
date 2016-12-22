@@ -3,13 +3,36 @@
       <h1>Welcome to the Music Market</h1>
 
       <h2>
-        This is the home page for the
-        <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-        sample application.
+        This is the home page for Music Market E-commerce store for Purchasing Musical Instruments and Accessories.
       </h2>
+        		<div id="articles" class="clearfix">
+        <article>
+                    <%= link_to image_tag("p1.jpg", alt: "Pianos"), "pianolinktba"  %>
+            <h3>Pianos</h3>
+            We have various types of Pianos in stock, from timeless grand pianos to the more modern keyboards of today. Have a look at whats in stock today.
+            <p></p>
+                    <%= link_to "View All", root_path, class: "btn btn-lg btn-primary" %>
 
-      <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>   <!--  CHANGED LINE -->
+            </article>
+        <article>
+<%= link_to image_tag("g1.jpg", alt: "Guitars"), "guitarlinktba" %>
+            <h3>Guitars</h3>
+            We have various types of Guitars in stock, from acoustic guitars to electric guitars. Have a look at whats in stock today.
+            <p></p>
+                    <%= link_to "View All", root_path, class: "btn btn-lg btn-primary" %>
+
+</article>
+<article>
+             <%= link_to image_tag("a1.jpg", alt: "Accessories"), "acclinktba" %>
+    <h3>Accessories</h3>
+    We have various types of accessories for different instruments in stock, from guitar picks to piano covers. Have a look at whats in stock today.
+    <p></p>
+                        <%= link_to "View All", root_path, class: "btn btn-lg btn-primary" %>
+
+            </article>
+        </div>
+
+
+         <!--  CHANGED LINE -->
     </div>      
 
-    <%= link_to image_tag("rails.png", alt: "Rails logo"),
-                'http://rubyonrails.org/' %>

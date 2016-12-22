@@ -4,8 +4,41 @@
     /* universal */
 
     body {
-      padding-top: 60px;
+      padding-top: 75px;
+        padding-bottom: -20px;
+    
     }
+    
+
+#articles{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+#articles article{
+	width: 300px;
+	float: left;
+	margin-right: 35px;
+	font-size: 12px;
+	overflow: hidden;
+}
+#articles #lastarticle{
+	margin-right: 0;
+}
+#articles article h1{	
+	text-transform: uppercase;
+	margin: 5px 0;
+	font-weight: bold;
+	font-size: 14px;
+	color: #222;
+}
+
+#articles article img
+{
+    
+}
+
+
 
     section {
       overflow: auto;
@@ -29,14 +62,14 @@
     }
 
     h1 {
-      font-size: 3em;
-      letter-spacing: -2px;
-      margin-bottom: 30px;
+      font-size: 2.8em;
+      letter-spacing: 0px;
+      margin-bottom: 20px;
       text-align: center;
     }
 
     h2 {
-      font-size: 1.2em;
+      font-size: 1.3em;
       letter-spacing: -1px;
       margin-bottom: 30px;
       text-align: center;
@@ -46,19 +79,26 @@
 
     p {
       font-size: 1.1em;
-      line-height: 1.7em;
+      line-height: 1.5em;
     }
-    /* header */
+
+header {
+   font-size: 1.2em;
+    
+    }
+
+nav navbar-nav navbar-right
+{
+    margin-top: 5px;
+}
+
 
     #logo {
       float: left;
       margin-right: 10px;
       font-size: 1.7em;
-      color: #fff;
-      text-transform: uppercase;
       letter-spacing: -1px;
-      padding-top: 9px;
-      font-weight: bold;
+      padding-top: 5px;
     }
 
     #logo:hover {
@@ -66,12 +106,14 @@
       text-decoration: none;
     }
 
+
 footer {
       margin-top: 45px;
       padding-top: 5px;
       border-top: 1px solid #eaeaea;
       color: #777;
     }
+
 
     footer a {
       color: #555;
@@ -81,17 +123,19 @@ footer {
       color: #222;
     }
 
-    footer small {
-      float: left;
+    .footerimg {
+    height: 48px;
+        width: 48px;
     }
 
     footer ul {
       float: right;
       list-style: none;
+        margin-top: -90px;
     }
 
     footer ul li {
-      float: left;
+      float: right;
       margin-left: 15px;
     }
 
@@ -150,11 +194,36 @@ aside {
 
 input, textarea, select, .uneditable-input {
       border: 1px solid #bbb;
-      width: 100%;
+      width: 80% !important;
       margin-bottom: 15px;
       @include box_sizing;
+    float: center;
     }
 
     input {
       height: auto !important;
     }
+
+.jumbotron
+{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #660066 !important;
+    width: 40% !important;
+}
+
+
+
+a
+{
+    color: #660066;  
+}
+
+a:hover 
+{
+    color: #990099;
+    
+}

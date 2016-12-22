@@ -1,13 +1,17 @@
     <footer class="footer">
-      <small>
-        The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-        by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
-      </small>
+        <%= link_to image_tag("hexy.png", alt: "YouTube Link"), "http://www.youtube.com/" %>
+           <%= link_to image_tag("hexf.png", alt: "Facebook Link"), "http://www.facebook.com/" %>
+           <%= link_to image_tag("hexi.png", alt: "Instagram Link"), "http://www.instagram.com/" %>
+           <%= link_to image_tag("hext.png", alt: "Twitter Link"), "http://www.twitter.com/" %>
+        <div class="footerimg">
+           
+            </div>
       <nav>
         <ul>
           <li><%= link_to "About",   about_path %></li>
           <li><%= link_to "Contact", contact_path %></li>
-          <li><a href="http://news.railstutorial.org/">News</a></li>
+            <li>©2016 Music Market Inc.</li>
+
         </ul>
       </nav>
     </footer>
