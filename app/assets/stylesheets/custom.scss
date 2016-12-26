@@ -34,11 +34,37 @@
 	color: #222;
 }
 
+
+
 #articles article img
 {
     
 }
 
+
+#info{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+#info article{
+	width: 500px;
+	float: left;
+    padding-bottom: 20px;
+	margin-right: 5px;
+	font-size: 12px;
+	overflow: hidden;
+}
+#info #lastarticle{
+	margin-right: 0;
+}
+#info article h1{	
+	text-transform: uppercase;
+	margin: 5px 0;
+	font-weight: bold;
+	font-size: 14px;
+	color: #222;
+}
 
 
     section {
