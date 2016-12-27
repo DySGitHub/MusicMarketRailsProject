@@ -14,4 +14,5 @@
       post   '/login',   to: 'sessions#create'
       delete '/logout',  to: 'sessions#destroy'
       resources :users
+       resources :feedbacks, only: [:create, :destroy]
     end

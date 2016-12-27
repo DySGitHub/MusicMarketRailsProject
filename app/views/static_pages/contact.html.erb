@@ -12,11 +12,28 @@
             </article>
         
         <article>
+            
+            
         <h3>Contact Info</h3>
         
         <%= mail_to "20063614@mail.wit.ie" , "Email Us" %>
         <p></p>
-        Phone:  051-302000
+                     Phone:  051-302000
+            <p></p>
+                <% if logged_in? %>
+
+          <h3>Your Feedback</h3>
+          <%= render 'shared/feed' %>
+            <% else %>
+            <p>You are not logged in</p>
+                        <% end %>
+
+            
+        
+    
+    </div>
+            
+             
             </article>
         </div>
 

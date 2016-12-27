@@ -6,6 +6,30 @@
             <%= gravatar_for @user %>
             <%= @user.name %>
           </h1>
+            <div class="col-md-8">
+      <% if @user.feedbacks.any? %>
+          <h3>Feedbacks(<%= @feedbacks.count %>)</h3>
+          <ol class="feedbacks">
+            #<%= render @feedbacks %>
+          </ol>
+        <% end %>
+        
+      </div>
         </section>
       </aside>
     </div>
+
+<% if @user.feedbacks.empty? %>
+      <div class="row">
+          <section class="feedback_form">
+            <%= render 'shared/feedback_form' %>
+          </section>
+            <ol class="feedbacks">
+          </ol>
+        </aside>
+      </div>
+            
+           
+            <% else %>
+            <p>You have already left feedback</p>
+             <% end %>
