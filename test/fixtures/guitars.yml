@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  guitartype: MyString
+  colour: MyString
+  price: 1
+  finish: MyString
+
+two:
+  brand: MyString
+  guitartype: MyString
+  colour: MyString
+  price: 1
+  finish: MyString

@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161226153920) do
+ActiveRecord::Schema.define(version: 20161228195053) do
+
+  create_table "accessories", force: :cascade do |t|
+    t.string   "brand"
+    t.string   "accessorytype"
+    t.string   "colour"
+    t.integer  "price"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
   create_table "feedbacks", force: :cascade do |t|
     t.text     "content"
@@ -19,6 +28,26 @@ ActiveRecord::Schema.define(version: 20161226153920) do
     t.datetime "updated_at", null: false
     t.index ["user_id", "created_at"], name: "index_feedbacks_on_user_id_and_created_at"
     t.index ["user_id"], name: "index_feedbacks_on_user_id"
+  end
+
+  create_table "guitars", force: :cascade do |t|
+    t.string   "brand"
+    t.string   "guitartype"
+    t.string   "colour"
+    t.integer  "price"
+    t.string   "finish"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "pianos", force: :cascade do |t|
+    t.string   "brand"
+    t.string   "pianotype"
+    t.string   "colour"
+    t.integer  "price"
+    t.integer  "keys"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

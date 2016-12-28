@@ -1,0 +1,10 @@
+Guitar.create(brand: "G&L", guitartype: "Acoustic", colour: "Brown", price: "280", strings: "6", weight: "3", finish: "Wooden")
+
+
+ rails generate model User name:string  email:string
+
+rails generate model Guitar brand:string  guitartype:string  colour:string  price:integer  finish:string
+
+rails generate model Piano brand:string  pianotype:string  colour:string  price:integer  keys:integer
+
+rails generate model Accessory brand:string  accessorytype:string  colour:string  price:integer 
