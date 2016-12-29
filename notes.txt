@@ -7,4 +7,6 @@ rails generate model Guitar brand:string  guitartype:string  colour:string  pric
 
 rails generate model Piano brand:string  pianotype:string  colour:string  price:integer  keys:integer
 
-rails generate model Accessory brand:string  accessorytype:string  colour:string  price:integer 
+rails generate model Accessory brand:string  accessorytype:string  colour:string  price:integer
+
+rails generate model Order delivery:string  address:string  address:country
