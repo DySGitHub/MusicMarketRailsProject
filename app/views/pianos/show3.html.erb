@@ -1,0 +1,11 @@
+   <% provide(:title, 'Buy Piano') %>
+    <div class="center jumbotron">   
+<h1>Confirm your purchase</h1>
+                    <%= image_tag("p3.jpg", alt: "Pianos")%>
+<p></p>
+<h3>Piano <%= @piano.id %></h3> <p></p> <h3>Brand: <%= @piano.brand %></h3> <p></p> <h3>Type: <%= @piano.pianotype %></h3> <p></p> <h3>Colour: <%= @piano.colour %></h3> <p></p> <h3>Price: €<%= @piano.price %></h3> <p></p> <h3>Keys: <%= @piano.keys %></h3>
+                    <%= link_to "Confirm Purchase", current_user, class: "btn btn-lg btn-primary"
+%>
+</div>
+
+
