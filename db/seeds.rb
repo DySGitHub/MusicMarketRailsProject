@@ -20,6 +20,8 @@ Accessory.find(5)
 Accessory.find(6)
 
 
+
+
 Guitar.create(brand: 'Yamaha', guitartype: 'Electric', colour: 'Black/White', price: 350, finish: 'Metal')
 Guitar.create(brand: 'Fender', guitartype: 'Acoustic', colour: 'Brown', price: 225, finish: 'Wooden')
 Guitar.create(brand: 'Maestro', guitartype: 'Electric', colour: 'Brown', price: 100, finish: 'Faux Wood')
