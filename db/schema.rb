@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161228195053) do
+ActiveRecord::Schema.define(version: 20161229124900) do
 
   create_table "accessories", force: :cascade do |t|
     t.string   "brand"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20161228195053) do
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "rating"
     t.index ["user_id", "created_at"], name: "index_feedbacks_on_user_id_and_created_at"
     t.index ["user_id"], name: "index_feedbacks_on_user_id"
   end

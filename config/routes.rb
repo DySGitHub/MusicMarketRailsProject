@@ -14,19 +14,7 @@
       post   '/login',   to: 'sessions#create'
       delete '/logout',  to: 'sessions#destroy'
       ############################################
-       get  '/buyguitars',  to: 'guitars#show'
-       get  '/buyguitars2',  to: 'guitars#show2'
-        get  '/buyguitars3',  to: 'guitars#show3'
-       get  '/buyguitars4',  to: 'guitars#show4'
-        get  '/buyguitars5',  to: 'guitars#show5'
-       get  '/buyguitars6',  to: 'guitars#show6'
-      ############################################
-        get  '/buypianos',  to: 'pianos#show'
-       get  '/buypianos2',  to: 'pianos#show2'
-        get  '/buypianos3',  to: 'pianos#show3'
-       get  '/buypianos4',  to: 'pianos#show4'
-        get  '/buypianos5',  to: 'pianos#show5'
-       get  '/buypianos6',  to: 'pianos#show6'
+     
       ############################################
        get  '/buyaccessories',  to: 'accessories#show'
        get  '/buyaccessories2',  to: 'accessories#show2'
@@ -38,6 +26,7 @@
       resources :users
       resources :guitars
       resources :pianos
+      resources :accessories
 
        resources :feedbacks, only: [:create, :destroy]
     end

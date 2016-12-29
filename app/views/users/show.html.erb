@@ -10,7 +10,7 @@
       <% if @user.feedbacks.any? %>
           <h3>Feedbacks(<%= @feedbacks.count %>)</h3>
           <ol class="feedbacks">
-            #<%= render @feedbacks %>
+            <%= render @feedbacks %>
           </ol>
         <% end %>
         
