@@ -1,0 +1,13 @@
+<li id="purchase-<%= purchase.id %>">
+      <span class="user"><%= link_to purchase.user.name, purchase.user %></span>
+              <span class="guitarid">Guitar: <%= Guitar.find(purchase.guitarid).id %></span>
+          <span class="guitarbrand">Brand: <%= Guitar.find(purchase.guitarid).brand %></span>
+          <span class="guitartype">Type: <%= Guitar.find(purchase.guitarid).guitartype %></span>
+          <span class="guitarprice">Price: <%= Guitar.find(purchase.guitarid).price %></span>
+
+      <span class="delivery">Delivery:<%= purchase.delivery %></span>
+          <span class="address">Address: <%= purchase.address %></span>
+      <span class="country">, <%= purchase.country %></span>
+
+      
+    </li>

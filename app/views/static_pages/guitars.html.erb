@@ -7,19 +7,19 @@
       </h2>
         		<div id="articles" class="clearfix">
         <article>
-                    <%= image_tag("g1.jpg", alt: "Guitars")%>
+                    <%= image_tag("g6.jpg", alt: "Guitars")%>
             <h3>Guitar 1</h3>
             <ul>
-            <li>Brand: G&amp;L</li>
-            <li>Price: €280</li>
+            <li>Brand: <%= Guitar.find(1).brand %></li>
+            <li>Price: €<%= Guitar.find(1).price %></li>
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Finish: Wooden</li>
-                  <li>Type: Acoustic</li>
-                  <li>Colour: Brown/Black</li>
+                  <li>Finish: <%= Guitar.find(1).finish %></li>
+                  <li>Type: <%= Guitar.find(1).guitartype %></li>
+                  <li>Colour:  <%= Guitar.find(1).colour %></li>
                 </ul>
               </li>
                 </ul>
@@ -28,19 +28,19 @@
 
             </article>
         <article>
-<%= link_to image_tag("g2.jpg", alt: "Guitars")%>
+<%= link_to image_tag("g5.jpg", alt: "Guitars")%>
             <h3>Guitar 2</h3>
             <ul>
-            <li>Brand: Avalon </li>
-                    <li>Price: €280</li>
+            <li>Brand: <%= Guitar.find(2).brand %></li>
+            <li>Price: €<%= Guitar.find(2).price %></li>
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Finish: Wooden/Metal</li>
-                  <li>Type: Electric</li>
-                  <li>Colour: Brown/White</li>
+                  <li>Finish: <%= Guitar.find(2).finish %></li>
+                  <li>Type: <%= Guitar.find(2).guitartype %></li>
+                  <li>Colour:  <%= Guitar.find(2).colour %></li>
                 </ul>
               </li>
                 </ul>
@@ -49,19 +49,19 @@
 
 </article>
 <article>
-             <%= link_to image_tag("g3.jpg", alt: "Accessories")%>
+             <%= link_to image_tag("g4.jpg", alt: "Guitars")%>
     <h3>Guitar 3</h3>
     <ul>
-    <li>Brand: Gibson </li>
-    <li>Price: €400 </li>
-         <li class="dropdown">
+            <li>Brand: <%= Guitar.find(3).brand %></li>
+            <li>Price: €<%= Guitar.find(3).price %></li>
+                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Finish: Wooden</li>
-                  <li>Type: Acoustic</li>
-                  <li>Colour: Brown</li>
+                  <li>Finish: <%= Guitar.find(3).finish %></li>
+                  <li>Type: <%= Guitar.find(3).guitartype %></li>
+                  <li>Colour:  <%= Guitar.find(3).colour %></li>
                 </ul>
               </li>
         </ul>
@@ -74,19 +74,19 @@
 
                     
                      <article>
-                    <%= link_to image_tag("g4.jpg", alt: "Pianos")%>
+                    <%= link_to image_tag("g3.jpg", alt: "Guitars")%>
             <h3>Guitar 4</h3>
-                         <ul>
-                         <li>Brand: Maestro </li>
-             <li>Price: €100</li>
-                              <li class="dropdown">
+                        <ul>
+            <li>Brand: <%= Guitar.find(4).brand %></li>
+            <li>Price: €<%= Guitar.find(4).price %></li>
+                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Finish: Faux Wood</li>
-                  <li>Type: Electric</li>
-                  <li>Colour: Brown</li>
+                  <li>Finish: <%= Guitar.find(4).finish %></li>
+                  <li>Type: <%= Guitar.find(4).guitartype %></li>
+                  <li>Colour:  <%= Guitar.find(4).colour %></li>
                 </ul>
               </li>
                     </ul>
@@ -95,19 +95,19 @@
 
             </article>
         <article>
-<%= link_to image_tag("g5.jpg", alt: "Guitars")%>
+<%= link_to image_tag("g2.jpg", alt: "Guitars")%>
             <h3>Guitar 5</h3>
             <ul>
-             <li>Brand: Fender </li>
-             <li> Price: €225 </li>
-                 <li class="dropdown">
+            <li>Brand: <%= Guitar.find(5).brand %></li>
+            <li>Price: €<%= Guitar.find(5).price %></li>
+                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Finish: Wooden</li>
-                  <li>Type: Acoustic</li>
-                  <li>Colour: Brown</li>
+                  <li>Finish: <%= Guitar.find(5).finish %></li>
+                  <li>Type: <%= Guitar.find(5).guitartype %></li>
+                  <li>Colour:  <%= Guitar.find(5).colour %></li>
                 </ul>
               </li>
                 </ul>
@@ -116,19 +116,19 @@
 
 </article>
 <article>
-             <%= link_to image_tag("g6.jpg", alt: "Accessories")%>
+             <%= link_to image_tag("g1.jpg", alt: "Guitars")%>
     <h3>Guitar 6</h3>
     <ul>
-    <li>Brand: Yamaha </li>
-    <li>Price: €350 </li>
-         <li class="dropdown">
+            <li>Brand: <%= Guitar.find(6).brand %></li>
+            <li>Price: €<%= Guitar.find(6).price %></li>
+                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Finish: Metal</li>
-                  <li>Type: Electric</li>
-                  <li>Colour: White/Black</li>
+                  <li>Finish: <%= Guitar.find(6).finish %></li>
+                  <li>Type: <%= Guitar.find(6).guitartype %></li>
+                  <li>Colour:  <%= Guitar.find(6).colour %></li>
                 </ul>
               </li>
         </ul>

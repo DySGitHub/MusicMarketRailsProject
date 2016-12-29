@@ -8,7 +8,6 @@
           </h1>
             <div class="col-md-8">
       <% if @user.feedbacks.any? %>
-          <h3>Feedbacks(<%= @feedbacks.count %>)</h3>
           <ol class="feedbacks">
             <%= render @feedbacks %>
           </ol>
@@ -27,9 +26,17 @@
             <ol class="feedbacks">
           </ol>
         </aside>
-      </div>
+      
             
            
             <% else %>
             <p>You have already left feedback</p>
              <% end %>
+
+        <% if @user.purchases.any? %>
+          <h3>Purchases (<%= @user.purchases.count %>)</h3>
+          <ol class="purchases">
+            <%= render @purchases %>
+          </ol>
+        <% end %>
+      </div>

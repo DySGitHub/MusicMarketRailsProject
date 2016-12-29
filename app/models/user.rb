@@ -3,6 +3,7 @@
         
       attr_accessor :remember_token
         has_many :feedbacks, dependent: :destroy
+         has_many :purchases
       validates :name, presence: true, length: { in: 5..30 }
       VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
       validates :email, presence: true, 

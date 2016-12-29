@@ -1,5 +1,4 @@
    <li id="feedback-<%= feedback.id %>">
-      <%= link_to gravatar_for(feedback.user, size: 50), feedback.user %>
       <span class="user"><%= link_to feedback.user.name, feedback.user %></span>
       <span class="rating">Rating: <%= feedback.rating %></span>
       <span class="content"><%= feedback.content %></span>

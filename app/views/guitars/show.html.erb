@@ -6,17 +6,12 @@
 <h3>Guitar <%= @guitar.id %></h3> <p></p> <h3>Brand: <%= @guitar.brand %></h3> <p></p> <h3>Type: <%= @guitar.guitartype %></h3> <p></p> <h3>Colour: <%= @guitar.colour %></h3> <p></p> <h3>Price: €<%= @guitar.price %></h3> <p></p> <h3>Finish: <%= @guitar.finish %></h3>
         
     
-        
-                <div class="form_row">
-                    <p>Delivery:</p>
-  <% [ 'Regular Delivery', 'Express Delivery'].each do |theme| %>
-    <br><%= radio_button_tag 'theme', theme, @theme == theme %>
-    <%= label_tag "theme_#{theme}", theme.humanize %>
-  <% end %>
-                    </div>
-        <p></p>
-
-                    <%= link_to "Confirm Purchase", current_user, class: "btn btn-lg btn-primary"%>
+<section class="user_info">
+            <%= render 'shared/user_info' %>
+          </section>
+          <section class="purchase_form">
+            <%= render 'shared/purchase_form' %>
+          </section>
   
 </div>
 

@@ -9,4 +9,24 @@ rails generate model Piano brand:string  pianotype:string  colour:string  price:
 
 rails generate model Accessory brand:string  accessorytype:string  colour:string  price:integer
 
-rails generate model Order delivery:string  address:string  address:country
+rails generate model Purchase delivery:string  address:string  country:string  guitarid:integer user:references
+
+
+Parameters: {"utf8"=>"✓", "authenticity_token"=>"lokPJ0rmvFWSbbCoGQyKM9dfFeLUKI+9NHoek1jgxX8sg20X/Lk9sK3C8watCk4LLL/B2l6yA4UZyvyY6N5dpA==", "order"=>{"address"=>"d", "country"=>"v", "delivery"=>"d"}, "commit"=>"Post"}
+
+
+class CreateOrders < ActiveRecord::Migration[5.0]
+  def change
+    create_table :orders do |t|
+      t.string :delivery
+      t.string :address
+      t.string :country
+      t.integer :guitarid
+      t.references :user, index: true, foreign_key: true
+
+
+      t.timestamps
+    end
+
+  end
+end

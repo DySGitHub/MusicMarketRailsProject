@@ -3,6 +3,7 @@
       def show
         @user = User.find(params[:id])
            @feedbacks = @user.feedbacks
+          @purchases = @user.purchases
       end
 
       def new

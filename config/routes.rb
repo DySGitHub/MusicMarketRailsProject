@@ -16,12 +16,7 @@
       ############################################
      
       ############################################
-       get  '/buyaccessories',  to: 'accessories#show'
-       get  '/buyaccessories2',  to: 'accessories#show2'
-        get  '/buyaccessories3',  to: 'accessories#show3'
-       get  '/buyaccessories4',  to: 'accessories#show4'
-        get  '/buyaccessories5',  to: 'accessories#show5'
-       get  '/buyaccessories6',  to: 'accessories#show6'
+  
 
       resources :users
       resources :guitars
@@ -29,4 +24,5 @@
       resources :accessories
 
        resources :feedbacks, only: [:create, :destroy]
+      resources :purchases, only: [:create]
     end
