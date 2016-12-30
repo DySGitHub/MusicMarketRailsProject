@@ -5,7 +5,7 @@
       <span class="timestamp">
         Posted <%= time_ago_in_words(feedback.created_at) %> ago.
            <% if current_user?(feedback.user) %>
-          <%= link_to "delete", feedback, method: :delete,
+          <%= link_to "Delete", feedback, method: :delete,
                                            data: { confirm: "Are you Sure You Want to Delete?" } %>
         <% end %>
       </span>

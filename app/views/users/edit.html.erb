@@ -1,0 +1,23 @@
+ <% provide(:title, 'Edit User') %>
+    <h1>Edit User</h1>
+
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <%= form_for(@user) do |f| %>
+          <%= render 'shared/error_messages', object: f.object %>
+          <%= f.label :name %>
+          <%= f.text_field :name, class: 'form-control', placeholder: '5-30 Characters' %>
+
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'form-control', placeholder: 'Ensure Email is Valid' %>
+
+          <%= f.label :password %>
+          <%= f.password_field :password, class: 'form-control' , placeholder: 'Minimum 6 Characters' %>
+
+          <%= f.label :password_confirmation, "Confirmation" %>
+          <%= f.password_field :password_confirmation, class: 'form-control', placeholder: 'Verify Password' %>
+
+          <%= f.submit "Save Changes", class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
