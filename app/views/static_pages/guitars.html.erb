@@ -24,7 +24,12 @@
               </li>
                 </ul>
             <p></p>
+                        <% if logged_in? %>
                     <%= link_to "Buy Now", Guitar.find(1), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
+
 
             </article>
         <article>
@@ -45,7 +50,12 @@
               </li>
                 </ul>
             <p></p>
+                    <% if logged_in? %>
                     <%= link_to "Buy Now", Guitar.find(2), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
+
 
 </article>
 <article>
@@ -66,7 +76,11 @@
               </li>
         </ul>
     <p></p>
-                        <%= link_to "Buy Now", Guitar.find(3), class: "btn btn-lg btn-primary" %>
+<% if logged_in? %>
+                    <%= link_to "Buy Now", Guitar.find(3), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
 
             </article>
                     
@@ -91,7 +105,11 @@
               </li>
                     </ul>
             <p></p>
+<% if logged_in? %>
                     <%= link_to "Buy Now", Guitar.find(4), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
 
             </article>
         <article>
@@ -112,7 +130,11 @@
               </li>
                 </ul>
             <p></p>
+<% if logged_in? %>
                     <%= link_to "Buy Now", Guitar.find(5), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
 
 </article>
 <article>
@@ -133,7 +155,11 @@
               </li>
         </ul>
     <p></p>
-                        <%= link_to "Buy Now", Guitar.find(6), class: "btn btn-lg btn-primary" %>
+<% if logged_in? %>
+                    <%= link_to "Buy Now", Guitar.find(6), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
 
             </article>
         </div>
