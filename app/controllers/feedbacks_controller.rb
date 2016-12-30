@@ -23,7 +23,6 @@ before_action :correct_user,   only: [:destroy]
             redirect_to current_user
           end
 
-            #NEW PRIVATE METHOD
           private
 
             def correct_user

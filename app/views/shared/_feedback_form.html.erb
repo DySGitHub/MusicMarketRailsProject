@@ -1,8 +1,10 @@
 <%= form_for Feedback.new do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
       <div class="field">
+<%= f.label "Site Rating" %>
+          <p></p>
+
             <select name="feedback[rating]">
-  <option value="">Select a Rating Score</option>
   <option value="0" selected="selected">0</option>
   <option value="1">1</option>
   <option value="2">2</option>

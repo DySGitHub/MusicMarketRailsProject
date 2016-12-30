@@ -1,16 +1,14 @@
 class StaticPagesController < ApplicationController
 
   def home
-              #Feedback.new = current_user.feedback.build if logged_in?
-                    #Feedback.new = all_users.feedback.build if logged_in?
-
+            
 
   end
 
   def help
   end
 
-  def about      # NEW
+  def about      
   end
     
     
@@ -19,6 +17,6 @@ class StaticPagesController < ApplicationController
          if logged_in?
             @feedback  = current_user.feedbacks.build
              @feed_items = current_user.feed
-    endz
+    end
 end
 end

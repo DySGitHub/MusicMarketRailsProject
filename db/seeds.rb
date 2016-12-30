@@ -1,17 +1,29 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+User.create(name:'Dylan Sage', email:'Dylan@Sage.com', password: "DylanPassword", password_confirmation: "DylanPassword")
+User.create(name:'Tom Smith', email:'TomSmith@gmail.com', password: "TomPassword", password_confirmation: "TomPassword")
+User.create(name:'Alex Jones', email:'AlexJones@hotmail.com', password: "AlexPassword", password_confirmation: "AlexPassword")
 
-Accessory.create(brand: 'Fender', accessorytype: 'Guitar Pick', colour: 'Brown', price: '20')
-Accessory.create(brand: 'Generic', accessorytype: 'Piano Cover', colour: 'Grey', price: '50')
-Accessory.create(brand: 'Warwick', accessorytype: 'Guitar Bag', colour: 'Black', price: '40')
-Accessory.create(brand: 'Roland', accessorytype: 'Piano Seat', colour: 'Black', price: '150')
-Accessory.create(brand: 'Yamaha', accessorytype: 'Guitar Box', colour: 'Grey', price: '100')
-Accessory.create(brand: 'Jim Dunlop', accessorytype: 'Guitar Pick', colour: 'Brown', price: '15')
+
+user = User.find(1)
+user.feedbacks.create(rating: 8, content: 'Excellent to Deal With.')
+
+
+user = User.find(1)
+user.purchases.create(delivery:'Express', address: '123 Fake Street', country: 'Ireland', guitarid: 2)
+user.purchases.create(delivery:'Regular', address: '13 Ave Street', country: 'UK', guitarid: 5)
+user = User.find(2)
+user.purchases.create(delivery:'Express', address: '52 Ariole Road', country: 'France', guitarid: 3)
+user = User.find(3)
+user.purchases.create(delivery:'Regular', address: '3 City Ave', country: 'UK', guitarid: 1)
+user.purchases.create(delivery:'Express', address: '5 Town Road', country: 'Ireland', guitarid: 4)
+user.purchases.create(delivery:'Regular', address: '212 Anderson Ave', country: 'Spain', guitarid: 6)
+
+
+Accessory.create(brand: 'Fender', accessorytype: 'Guitar Pick', colour: 'Brown', price: 20)
+Accessory.create(brand: 'Generic', accessorytype: 'Piano Cover', colour: 'Grey', price: 50)
+Accessory.create(brand: 'Warwick', accessorytype: 'Guitar Bag', colour: 'Black', price: 40)
+Accessory.create(brand: 'Roland', accessorytype: 'Piano Seat', colour: 'Black', price: 150)
+Accessory.create(brand: 'Yamaha', accessorytype: 'Guitar Box', colour: 'Grey', price: 100)
+Accessory.create(brand: 'Jim Dunlop', accessorytype: 'Guitar Pick', colour: 'Brown', price: 15)
 Accessory.find(1)
 Accessory.find(2)
 Accessory.find(3)
