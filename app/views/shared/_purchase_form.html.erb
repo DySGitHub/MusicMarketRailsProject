@@ -4,9 +4,16 @@
         <%= f.text_area :guitarid, :value => Guitar.find(params[:id]).id %>
         <%= f.text_area :address, placeholder: "Address" %>
         <%= f.text_area :country, placeholder: "Country" %>
-                  <%= f.text_area :delivery, placeholder: "Express or Regular" %>
+           <select name="purchase[delivery]">
+  <option value="">Please Select Delivery Method</option>
+  <option value="Express" selected="selected">Express</option>
+  <option value="Regular">Regular</option>
+
+</select>
 
       </div>
       <%= f.submit "Post", class: "btn btn-primary" %>
 
     <% end %>
+
+

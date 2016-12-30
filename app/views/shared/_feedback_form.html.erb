@@ -1,7 +1,20 @@
 <%= form_for Feedback.new do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
       <div class="field">
-        <%= f.text_area :rating, placeholder: "Enter a rating from 0-100" %>
+            <select name="feedback[rating]">
+  <option value="">Select a Rating Score</option>
+  <option value="0" selected="selected">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+</select>
         <%= f.text_area :content, placeholder: "Enter item feedback..." %>
       </div>
       <%= f.submit "Post", class: "btn btn-primary" %>

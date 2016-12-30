@@ -7,17 +7,19 @@ before_action :correct_user,   only: :destroy
 
         @feedback = current_user.feedbacks.build(secure_post) 
         if @feedback.save
-          flash[:success] = "fb created!"
+          flash[:success] = "Feedback added"
           redirect_to current_user
         else
-            @feed_items = [] 
-          render 'static_pages/home'
+            @feed_items = []
+            flash[:error] = "Feedback failed to add"
+             redirect_to current_user
+
         end
       end
 
      def destroy
             @feedback.destroy
-            flash[:success] = "fb deleted"
+            flash[:success] = "Feedback removed"
             redirect_to current_user
           end
 
