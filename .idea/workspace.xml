@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c42d6f10-cf92-4fcd-b3aa-4b4b47717016" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__MusicMarketRubyProject.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__MusicMarketRubyProject.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/spec__MusicMarketRubyProject.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/test__MusicMarketRubyProject.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/purchases_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/purchases_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new/MusicMarketRubyProject" afterPath="$PROJECT_DIR$/new/MusicMarketRubyProject" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/purchase.rb" afterPath="$PROJECT_DIR$/app/models/purchase.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -34,8 +26,8 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+            <state relative-caret-position="543">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,13 +40,13 @@
               <ID>RailsDependency</ID>
               <OriginalElement>User</OriginalElement>
               <nodes>
-                <node x="0.0" y="15.430555555555543">User</node>
-                <node x="1.0" y="587.5555555555554">Guitar</node>
-                <node x="680.0" y="283.3472222222222">ApplicationRecord</node>
-                <node x="359.5" y="169.49999999999994">Accessory</node>
-                <node x="371.0" y="327.49999999999994">Piano</node>
-                <node x="360.0" y="10.499999999999943">Feedback</node>
-                <node x="341.0" y="507.49999999999994">Purchase</node>
+                <node x="-94.92708333333334" y="21.190972222222214">User</node>
+                <node x="-86.625" y="228.13715277777777">Guitar</node>
+                <node x="693.3871527777777" y="167.453125">ApplicationRecord</node>
+                <node x="669.8385416666667" y="372.3819444444444">Accessory</node>
+                <node x="371.0" y="372.5">Piano</node>
+                <node x="367.30208333333326" y="10.5">Feedback</node>
+                <node x="271.63020833333337" y="171.9340277777778">Purchase</node>
               </nodes>
               <notes />
               <edges>
@@ -64,13 +56,13 @@
                 </edge>
                 <edge source="Feedback" target="ApplicationRecord">
                   <point x="110.5" y="-0.0" />
-                  <point x="600.0" y="69.99999999999994" />
+                  <point x="600.0" y="70.0" />
                   <point x="-66.0" y="-7.5" />
                 </edge>
                 <edge source="Accessory" target="ApplicationRecord">
                   <point x="111.0" y="-0.0" />
-                  <point x="600.0" y="228.49999999999994" />
-                  <point x="-66.0" y="-2.5" />
+                  <point x="795.9392361111113" y="310.8975694444444" />
+                  <point x="-66.0" y="7.5" />
                 </edge>
                 <edge source="Guitar" target="Purchase">
                   <point x="129.5" y="-40.75" />
@@ -84,29 +76,27 @@
                 </edge>
                 <edge source="Purchase" target="ApplicationRecord">
                   <point x="129.5" y="-0.0" />
-                  <point x="-66.0" y="7.5" />
+                  <point x="-66.0" y="-2.5" />
                 </edge>
                 <edge source="User" target="Feedback">
                   <point x="130.5" y="-0.0" />
-                  <point x="341.0" y="69.99999999999994" />
+                  <point x="341.0" y="70.0" />
                   <point x="-110.5" y="-0.0" />
                 </edge>
                 <edge source="Guitar" target="ApplicationRecord">
                   <point x="129.5" y="40.75" />
-                  <point x="341.0" y="694.6805555555554" />
-                  <point x="600.0" y="694.6805555555554" />
+                  <point x="347.08506944444446" y="530.0902777777778" />
+                  <point x="592.6979166666666" y="527.65625" />
                   <point x="-66.0" y="12.5" />
                 </edge>
                 <edge source="Piano" target="ApplicationRecord">
                   <point x="99.5" y="-0.0" />
-                  <point x="600.0" y="397.49999999999994" />
+                  <point x="600.0" y="442.5" />
                   <point x="-66.0" y="2.5" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.7470817120622568" x="406.00260416666663" y="355.5" />
-              <SelectedNodes>
-                <node>User</node>
-              </SelectedNodes>
+              <settings layout="Hierarchic Group" zoom="0.8216833095577746" x="406.71961805555554" y="280.5" />
+              <SelectedNodes />
               <Categories>
                 <Category>Association fields</Category>
                 <Category>Migration fields</Category>
@@ -120,14 +110,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-              <folding>
-                <marker date="1483051339177" expanded="true" signature="689:906" ph=" ... end" />
-                <marker date="1483051339177" expanded="true" signature="974:1030" ph=" ... end" />
-                <marker date="1483051339177" expanded="true" signature="1064:1218" ph=" ... end" />
-                <marker date="1483051339177" expanded="true" signature="1261:1346" ph=" ... end" />
-                <marker date="1483051339177" expanded="true" signature="1375:1436" ph=" ... end" />
-                <marker date="1483051339177" expanded="true" signature="1454:1520" ph=" ... end" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,9 +120,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-              <folding>
-                <marker date="1483112081587" expanded="true" signature="263:291" ph="{ ... }" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,9 +165,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,6 +253,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,34 +338,35 @@
       <updated>1482874373644</updated>
       <workItem from="1482874377679" duration="981000" />
       <workItem from="1483388281792" duration="772000" />
+      <workItem from="1483407581775" duration="262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1753000" />
+    <option name="totallyTimeSpent" value="2015000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,14 +392,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <marker date="1483051339177" expanded="true" signature="689:906" ph=" ... end" />
-            <marker date="1483051339177" expanded="true" signature="974:1030" ph=" ... end" />
-            <marker date="1483051339177" expanded="true" signature="1064:1218" ph=" ... end" />
-            <marker date="1483051339177" expanded="true" signature="1261:1346" ph=" ... end" />
-            <marker date="1483051339177" expanded="true" signature="1375:1436" ph=" ... end" />
-            <marker date="1483051339177" expanded="true" signature="1454:1520" ph=" ... end" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -425,9 +400,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding>
-            <marker date="1483112081587" expanded="true" signature="263:291" ph="{ ... }" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -435,14 +416,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <marker date="1483051339177" expanded="true" signature="689:906" ph=" ... end" />
-            <marker date="1483051339177" expanded="true" signature="974:1030" ph=" ... end" />
-            <marker date="1483051339177" expanded="true" signature="1064:1218" ph=" ... end" />
-            <marker date="1483051339177" expanded="true" signature="1261:1346" ph=" ... end" />
-            <marker date="1483051339177" expanded="true" signature="1375:1436" ph=" ... end" />
-            <marker date="1483051339177" expanded="true" signature="1454:1520" ph=" ... end" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -450,16 +424,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding>
-            <marker date="1483112081587" expanded="true" signature="263:291" ph="{ ... }" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/feedback.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="543">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -470,13 +458,13 @@
           <ID>RailsDependency</ID>
           <OriginalElement>User</OriginalElement>
           <nodes>
-            <node x="0.0" y="15.430555555555543">User</node>
-            <node x="1.0" y="587.5555555555554">Guitar</node>
-            <node x="680.0" y="283.3472222222222">ApplicationRecord</node>
-            <node x="359.5" y="169.49999999999994">Accessory</node>
-            <node x="371.0" y="327.49999999999994">Piano</node>
-            <node x="360.0" y="10.499999999999943">Feedback</node>
-            <node x="341.0" y="507.49999999999994">Purchase</node>
+            <node x="-94.92708333333334" y="21.190972222222214">User</node>
+            <node x="-86.625" y="228.13715277777777">Guitar</node>
+            <node x="693.3871527777777" y="167.453125">ApplicationRecord</node>
+            <node x="669.8385416666667" y="372.3819444444444">Accessory</node>
+            <node x="371.0" y="372.5">Piano</node>
+            <node x="367.30208333333326" y="10.5">Feedback</node>
+            <node x="271.63020833333337" y="171.9340277777778">Purchase</node>
           </nodes>
           <notes />
           <edges>
@@ -486,13 +474,13 @@
             </edge>
             <edge source="Feedback" target="ApplicationRecord">
               <point x="110.5" y="-0.0" />
-              <point x="600.0" y="69.99999999999994" />
+              <point x="600.0" y="70.0" />
               <point x="-66.0" y="-7.5" />
             </edge>
             <edge source="Accessory" target="ApplicationRecord">
               <point x="111.0" y="-0.0" />
-              <point x="600.0" y="228.49999999999994" />
-              <point x="-66.0" y="-2.5" />
+              <point x="795.9392361111113" y="310.8975694444444" />
+              <point x="-66.0" y="7.5" />
             </edge>
             <edge source="Guitar" target="Purchase">
               <point x="129.5" y="-40.75" />
@@ -506,29 +494,27 @@
             </edge>
             <edge source="Purchase" target="ApplicationRecord">
               <point x="129.5" y="-0.0" />
-              <point x="-66.0" y="7.5" />
+              <point x="-66.0" y="-2.5" />
             </edge>
             <edge source="User" target="Feedback">
               <point x="130.5" y="-0.0" />
-              <point x="341.0" y="69.99999999999994" />
+              <point x="341.0" y="70.0" />
               <point x="-110.5" y="-0.0" />
             </edge>
             <edge source="Guitar" target="ApplicationRecord">
               <point x="129.5" y="40.75" />
-              <point x="341.0" y="694.6805555555554" />
-              <point x="600.0" y="694.6805555555554" />
+              <point x="347.08506944444446" y="530.0902777777778" />
+              <point x="592.6979166666666" y="527.65625" />
               <point x="-66.0" y="12.5" />
             </edge>
             <edge source="Piano" target="ApplicationRecord">
               <point x="99.5" y="-0.0" />
-              <point x="600.0" y="397.49999999999994" />
+              <point x="600.0" y="442.5" />
               <point x="-66.0" y="2.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.7470817120622568" x="406.00260416666663" y="355.5" />
-          <SelectedNodes>
-            <node>User</node>
-          </SelectedNodes>
+          <settings layout="Hierarchic Group" zoom="0.8216833095577746" x="406.71961805555554" y="280.5" />
+          <SelectedNodes />
           <Categories>
             <Category>Association fields</Category>
             <Category>Migration fields</Category>
