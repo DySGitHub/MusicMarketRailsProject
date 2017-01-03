@@ -1,4 +1,4 @@
 class Piano < ApplicationRecord
-         has_many :purchases
+         has_many :piano_purchases
 
 end

@@ -1,5 +1,5 @@
 class Accessory < ApplicationRecord
-         has_many :purchases
+         has_many :acc_purchases
 
 
 end

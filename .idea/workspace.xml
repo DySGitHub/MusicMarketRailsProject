@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c42d6f10-cf92-4fcd-b3aa-4b4b47717016" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/15820520_1475486052476488_838149655_n.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/rails.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/new/MusicMarketRubyProject" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/new/heroku_url.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/users_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/users_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/accessories.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/accessories.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagram.png" afterPath="$PROJECT_DIR$/diagram.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/accessory.rb" afterPath="$PROJECT_DIR$/app/models/accessory.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/piano.rb" afterPath="$PROJECT_DIR$/app/models/piano.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -32,8 +27,8 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="441">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -46,62 +41,95 @@
               <ID>RailsDependency</ID>
               <OriginalElement>User</OriginalElement>
               <nodes>
-                <node x="-94.92708333333334" y="21.190972222222214">User</node>
-                <node x="-86.625" y="228.13715277777777">Guitar</node>
-                <node x="693.3871527777777" y="167.453125">ApplicationRecord</node>
-                <node x="669.8385416666667" y="372.3819444444444">Accessory</node>
-                <node x="371.0" y="372.5">Piano</node>
-                <node x="367.30208333333326" y="10.5">Feedback</node>
-                <node x="271.63020833333337" y="171.9340277777778">Purchase</node>
+                <node x="-285.5833333333333" y="39.25">Guitar</node>
+                <node x="-310.72916666666663" y="394.8275641025641">User</node>
+                <node x="-285.375" y="216.08333333333334">Piano</node>
+                <node x="-318.34375" y="622.1972756410256">Accessory</node>
+                <node x="452.86458333333337" y="79.23958333333333">Purchase</node>
+                <node x="473.5" y="496.6123397435898">Feedback</node>
+                <node x="826.0" y="456.10769230769233">ApplicationRecord</node>
+                <node x="423.1875" y="644.1644230769232">AccPurchase</node>
+                <node x="422.0" y="287.14583333333337">PianoPurchase</node>
               </nodes>
               <notes />
               <edges>
+                <edge source="User" target="AccPurchase">
+                  <point x="171.0" y="82.80000000000007" />
+                  <point x="-151.0" y="-40.75" />
+                </edge>
+                <edge source="PianoPurchase" target="ApplicationRecord">
+                  <point x="162.0" y="-0.0" />
+                  <point x="-66.0" y="-1.875" />
+                </edge>
+                <edge source="User" target="ApplicationRecord">
+                  <point x="171.0" y="-0.0" />
+                  <point x="744.3645833333333" y="476.2998397435898" />
+                  <point x="-66.0" y="1.875" />
+                </edge>
+                <edge source="User" target="PianoPurchase">
+                  <point x="171.0" y="-41.39999999999998" />
+                  <point x="-162.0" y="40.75" />
+                </edge>
+                <edge source="User" target="Feedback">
+                  <point x="171.0" y="41.40000000000009" />
+                  <point x="422.0" y="593.7269230769232" />
+                  <point x="-110.5" y="-0.0" />
+                </edge>
+                <edge source="Piano" target="PianoPurchase">
+                  <point x="162.0" y="40.75" />
+                  <point x="-162.0" y="-40.75" />
+                </edge>
+                <edge source="Accessory" target="AccPurchase">
+                  <point x="141.0" y="-35.25" />
+                  <point x="-151.0" y="40.75" />
+                </edge>
                 <edge source="User" target="Purchase">
-                  <point x="130.5" y="54.33333333333334" />
-                  <point x="-129.5" y="-40.75" />
+                  <point x="171.0" y="-82.80000000000001" />
+                  <point x="422.0" y="222.75" />
+                  <point x="-129.5" y="40.75" />
                 </edge>
                 <edge source="Feedback" target="ApplicationRecord">
                   <point x="110.5" y="-0.0" />
-                  <point x="600.0" y="70.0" />
-                  <point x="-66.0" y="-7.5" />
-                </edge>
-                <edge source="Accessory" target="ApplicationRecord">
-                  <point x="111.0" y="-0.0" />
-                  <point x="795.9392361111113" y="310.8975694444444" />
-                  <point x="-66.0" y="7.5" />
+                  <point x="746.0" y="593.7269230769232" />
+                  <point x="-66.0" y="5.625" />
                 </edge>
                 <edge source="Guitar" target="Purchase">
-                  <point x="129.5" y="-40.75" />
-                  <point x="-129.5" y="40.75" />
+                  <point x="129.5" y="40.75" />
+                  <point x="342.0" y="122.25" />
+                  <point x="422.0" y="141.25" />
+                  <point x="-129.5" y="-40.75" />
                 </edge>
-                <edge source="User" target="ApplicationRecord">
-                  <point x="130.5" y="-54.333333333333314" />
-                  <point x="341.0" y="0.0" />
-                  <point x="600.0" y="0.0" />
-                  <point x="-66.0" y="-12.5" />
+                <edge source="AccPurchase" target="ApplicationRecord">
+                  <point x="151.0" y="-0.0" />
+                  <point x="-66.0" y="9.375" />
+                </edge>
+                <edge source="Accessory" target="ApplicationRecord">
+                  <point x="141.0" y="35.25" />
+                  <point x="273.3125" y="821.1660256410257" />
+                  <point x="422.0" y="876.9576923076924" />
+                  <point x="742.7291666666667" y="814.811858974359" />
+                  <point x="-66.0" y="13.125" />
                 </edge>
                 <edge source="Purchase" target="ApplicationRecord">
                   <point x="129.5" y="-0.0" />
-                  <point x="-66.0" y="-2.5" />
-                </edge>
-                <edge source="User" target="Feedback">
-                  <point x="130.5" y="-0.0" />
-                  <point x="341.0" y="70.0" />
-                  <point x="-110.5" y="-0.0" />
+                  <point x="746.0" y="182.0" />
+                  <point x="-66.0" y="-9.375" />
                 </edge>
                 <edge source="Guitar" target="ApplicationRecord">
-                  <point x="129.5" y="40.75" />
-                  <point x="347.08506944444446" y="530.0902777777778" />
-                  <point x="592.6979166666666" y="527.65625" />
-                  <point x="-66.0" y="12.5" />
+                  <point x="129.5" y="-40.75" />
+                  <point x="342.0" y="40.75" />
+                  <point x="422.0" y="70.8692307692308" />
+                  <point x="746.0" y="70.8692307692308" />
+                  <point x="-66.0" y="-13.125" />
                 </edge>
                 <edge source="Piano" target="ApplicationRecord">
-                  <point x="99.5" y="-0.0" />
-                  <point x="600.0" y="442.5" />
-                  <point x="-66.0" y="2.5" />
+                  <point x="162.0" y="-40.75" />
+                  <point x="418.72916666666663" y="255.38541666666663" />
+                  <point x="746.0" y="276.64583333333337" />
+                  <point x="-66.0" y="-5.625" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.8216833095577746" x="406.71961805555554" y="280.5" />
+              <settings layout="Hierarchic Group" zoom="0.6114649681528662" x="479.0" y="461.0" />
               <SelectedNodes />
               <Categories>
                 <Category>Association fields</Category>
@@ -117,12 +145,14 @@
             <state relative-caret-position="68">
               <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
               <folding>
-                <marker date="1483408893657" expanded="true" signature="14:1609" ph=" ... end" />
-                <marker date="1483408893657" expanded="true" signature="922:978" ph=" ... end" />
-                <marker date="1483408893657" expanded="true" signature="1012:1166" ph=" ... end" />
-                <marker date="1483408893657" expanded="true" signature="1209:1294" ph=" ... end" />
-                <marker date="1483408893657" expanded="true" signature="1323:1384" ph=" ... end" />
-                <marker date="1483408893657" expanded="true" signature="1402:1468" ph=" ... end" />
+                <marker date="1483412313055" expanded="true" signature="746:963" ph=" ... end" />
+                <marker date="1483412313055" expanded="true" signature="999:1055" ph=" ... end" />
+                <marker date="1483412313055" expanded="true" signature="1089:1243" ph=" ... end" />
+                <marker date="1483412313055" expanded="true" signature="1286:1371" ph=" ... end" />
+                <marker date="1483412313055" expanded="true" signature="1400:1461" ph=" ... end" />
+                <marker date="1483412313055" expanded="true" signature="1479:1545" ph=" ... end" />
+                <marker date="1483412313055" expanded="true" signature="1569:1678" ph=" ... end" />
+                <marker date="1483412313055" expanded="true" signature="1570:1668" ph="if ... end" />
               </folding>
             </state>
           </provider>
@@ -178,8 +208,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,6 +294,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -352,11 +382,12 @@
       <workItem from="1482874377679" duration="981000" />
       <workItem from="1483388281792" duration="772000" />
       <workItem from="1483407581775" duration="861000" />
+      <workItem from="1483416622281" duration="513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2614000" />
+    <option name="totallyTimeSpent" value="3127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -406,12 +437,14 @@
         <state relative-caret-position="68">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
           <folding>
-            <marker date="1483408893657" expanded="true" signature="14:1609" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="922:978" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="1012:1166" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="1209:1294" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="1323:1384" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="1402:1468" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="746:963" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="999:1055" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1089:1243" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1286:1371" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1400:1461" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1479:1545" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1569:1678" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1570:1668" ph="if ... end" />
           </folding>
         </state>
       </provider>
@@ -437,12 +470,47 @@
         <state relative-caret-position="68">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
           <folding>
-            <marker date="1483408893657" expanded="true" signature="14:1609" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="922:978" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="1012:1166" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="1209:1294" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="1323:1384" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="1402:1468" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="746:963" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="999:1055" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1089:1243" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1286:1371" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1400:1461" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1479:1545" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1569:1678" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1570:1668" ph="if ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/feedback.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding>
+            <marker date="1483412313055" expanded="true" signature="746:963" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="999:1055" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1089:1243" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1286:1371" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1400:1461" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1479:1545" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1569:1678" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1570:1668" ph="if ... end" />
           </folding>
         </state>
       </provider>
@@ -460,12 +528,14 @@
         <state relative-caret-position="68">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
           <folding>
-            <marker date="1483408893657" expanded="true" signature="14:1609" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="922:978" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="1012:1166" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="1209:1294" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="1323:1384" ph=" ... end" />
-            <marker date="1483408893657" expanded="true" signature="1402:1468" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="746:963" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="999:1055" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1089:1243" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1286:1371" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1400:1461" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1479:1545" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1569:1678" ph=" ... end" />
+            <marker date="1483412313055" expanded="true" signature="1570:1668" ph="if ... end" />
           </folding>
         </state>
       </provider>
@@ -480,8 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="441">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -492,62 +562,95 @@
           <ID>RailsDependency</ID>
           <OriginalElement>User</OriginalElement>
           <nodes>
-            <node x="-94.92708333333334" y="21.190972222222214">User</node>
-            <node x="-86.625" y="228.13715277777777">Guitar</node>
-            <node x="693.3871527777777" y="167.453125">ApplicationRecord</node>
-            <node x="669.8385416666667" y="372.3819444444444">Accessory</node>
-            <node x="371.0" y="372.5">Piano</node>
-            <node x="367.30208333333326" y="10.5">Feedback</node>
-            <node x="271.63020833333337" y="171.9340277777778">Purchase</node>
+            <node x="-285.5833333333333" y="39.25">Guitar</node>
+            <node x="-310.72916666666663" y="394.8275641025641">User</node>
+            <node x="-285.375" y="216.08333333333334">Piano</node>
+            <node x="-318.34375" y="622.1972756410256">Accessory</node>
+            <node x="452.86458333333337" y="79.23958333333333">Purchase</node>
+            <node x="473.5" y="496.6123397435898">Feedback</node>
+            <node x="826.0" y="456.10769230769233">ApplicationRecord</node>
+            <node x="423.1875" y="644.1644230769232">AccPurchase</node>
+            <node x="422.0" y="287.14583333333337">PianoPurchase</node>
           </nodes>
           <notes />
           <edges>
+            <edge source="User" target="AccPurchase">
+              <point x="171.0" y="82.80000000000007" />
+              <point x="-151.0" y="-40.75" />
+            </edge>
+            <edge source="PianoPurchase" target="ApplicationRecord">
+              <point x="162.0" y="-0.0" />
+              <point x="-66.0" y="-1.875" />
+            </edge>
+            <edge source="User" target="ApplicationRecord">
+              <point x="171.0" y="-0.0" />
+              <point x="744.3645833333333" y="476.2998397435898" />
+              <point x="-66.0" y="1.875" />
+            </edge>
+            <edge source="User" target="PianoPurchase">
+              <point x="171.0" y="-41.39999999999998" />
+              <point x="-162.0" y="40.75" />
+            </edge>
+            <edge source="User" target="Feedback">
+              <point x="171.0" y="41.40000000000009" />
+              <point x="422.0" y="593.7269230769232" />
+              <point x="-110.5" y="-0.0" />
+            </edge>
+            <edge source="Piano" target="PianoPurchase">
+              <point x="162.0" y="40.75" />
+              <point x="-162.0" y="-40.75" />
+            </edge>
+            <edge source="Accessory" target="AccPurchase">
+              <point x="141.0" y="-35.25" />
+              <point x="-151.0" y="40.75" />
+            </edge>
             <edge source="User" target="Purchase">
-              <point x="130.5" y="54.33333333333334" />
-              <point x="-129.5" y="-40.75" />
+              <point x="171.0" y="-82.80000000000001" />
+              <point x="422.0" y="222.75" />
+              <point x="-129.5" y="40.75" />
             </edge>
             <edge source="Feedback" target="ApplicationRecord">
               <point x="110.5" y="-0.0" />
-              <point x="600.0" y="70.0" />
-              <point x="-66.0" y="-7.5" />
-            </edge>
-            <edge source="Accessory" target="ApplicationRecord">
-              <point x="111.0" y="-0.0" />
-              <point x="795.9392361111113" y="310.8975694444444" />
-              <point x="-66.0" y="7.5" />
+              <point x="746.0" y="593.7269230769232" />
+              <point x="-66.0" y="5.625" />
             </edge>
             <edge source="Guitar" target="Purchase">
-              <point x="129.5" y="-40.75" />
-              <point x="-129.5" y="40.75" />
+              <point x="129.5" y="40.75" />
+              <point x="342.0" y="122.25" />
+              <point x="422.0" y="141.25" />
+              <point x="-129.5" y="-40.75" />
             </edge>
-            <edge source="User" target="ApplicationRecord">
-              <point x="130.5" y="-54.333333333333314" />
-              <point x="341.0" y="0.0" />
-              <point x="600.0" y="0.0" />
-              <point x="-66.0" y="-12.5" />
+            <edge source="AccPurchase" target="ApplicationRecord">
+              <point x="151.0" y="-0.0" />
+              <point x="-66.0" y="9.375" />
+            </edge>
+            <edge source="Accessory" target="ApplicationRecord">
+              <point x="141.0" y="35.25" />
+              <point x="273.3125" y="821.1660256410257" />
+              <point x="422.0" y="876.9576923076924" />
+              <point x="742.7291666666667" y="814.811858974359" />
+              <point x="-66.0" y="13.125" />
             </edge>
             <edge source="Purchase" target="ApplicationRecord">
               <point x="129.5" y="-0.0" />
-              <point x="-66.0" y="-2.5" />
-            </edge>
-            <edge source="User" target="Feedback">
-              <point x="130.5" y="-0.0" />
-              <point x="341.0" y="70.0" />
-              <point x="-110.5" y="-0.0" />
+              <point x="746.0" y="182.0" />
+              <point x="-66.0" y="-9.375" />
             </edge>
             <edge source="Guitar" target="ApplicationRecord">
-              <point x="129.5" y="40.75" />
-              <point x="347.08506944444446" y="530.0902777777778" />
-              <point x="592.6979166666666" y="527.65625" />
-              <point x="-66.0" y="12.5" />
+              <point x="129.5" y="-40.75" />
+              <point x="342.0" y="40.75" />
+              <point x="422.0" y="70.8692307692308" />
+              <point x="746.0" y="70.8692307692308" />
+              <point x="-66.0" y="-13.125" />
             </edge>
             <edge source="Piano" target="ApplicationRecord">
-              <point x="99.5" y="-0.0" />
-              <point x="600.0" y="442.5" />
-              <point x="-66.0" y="2.5" />
+              <point x="162.0" y="-40.75" />
+              <point x="418.72916666666663" y="255.38541666666663" />
+              <point x="746.0" y="276.64583333333337" />
+              <point x="-66.0" y="-5.625" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.8216833095577746" x="406.71961805555554" y="280.5" />
+          <settings layout="Hierarchic Group" zoom="0.6114649681528662" x="479.0" y="461.0" />
           <SelectedNodes />
           <Categories>
             <Category>Association fields</Category>
