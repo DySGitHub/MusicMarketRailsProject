@@ -25,4 +25,7 @@
 
        resources :feedbacks, only: [:create, :destroy]
       resources :purchases, only: [:create]
+            resources :piano_purchases, only: [:create]
+      resources :acc_purchases, only: [:create]
+
     end

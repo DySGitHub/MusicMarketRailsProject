@@ -11,6 +11,11 @@ rails generate model Accessory brand:string  accessorytype:string  colour:string
 
 rails generate model Purchase delivery:string  address:string  country:string  guitarid:integer user:references
 
+rails generate model PianoPurchase delivery:string  address:string  country:string  pianoid:integer user:references
+
+rails generate model AccPurchase delivery:string  address:string  country:string  accid:integer user:references
+
+
 
 Parameters: {"utf8"=>"✓", "authenticity_token"=>"lokPJ0rmvFWSbbCoGQyKM9dfFeLUKI+9NHoek1jgxX8sg20X/Lk9sK3C8watCk4LLL/B2l6yA4UZyvyY6N5dpA==", "order"=>{"address"=>"d", "country"=>"v", "delivery"=>"d"}, "commit"=>"Post"}
 

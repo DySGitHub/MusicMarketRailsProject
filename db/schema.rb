@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161229223458) do
+ActiveRecord::Schema.define(version: 20170103022018) do
+
+  create_table "acc_purchases", force: :cascade do |t|
+    t.string   "delivery"
+    t.string   "address"
+    t.string   "country"
+    t.integer  "accid"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_acc_purchases_on_user_id"
+  end
 
   create_table "accessories", force: :cascade do |t|
     t.string   "brand"
@@ -39,6 +50,17 @@ ActiveRecord::Schema.define(version: 20161229223458) do
     t.string   "finish"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "piano_purchases", force: :cascade do |t|
+    t.string   "delivery"
+    t.string   "address"
+    t.string   "country"
+    t.integer  "pianoid"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_piano_purchases_on_user_id"
   end
 
   create_table "pianos", force: :cascade do |t|

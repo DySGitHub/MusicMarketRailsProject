@@ -1,0 +1,23 @@
+  <%= form_for PianoPurchase.new do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+      <div class="field">
+          <p></p>
+                  <%= f.label "Piano ID" %>
+                    <p></p>
+
+        <%= f.text_area :pianoid, :value => Piano.find(params[:id]).id, :readonly => true %>
+        <%= f.text_area :address, placeholder: "Address" %>
+        <%= f.text_area :country, placeholder: "Country" %>
+        <%= f.label "Delivery Options" %>
+           <select name="piano_purchase[delivery]">
+  <option value="Express" selected="selected">Express</option>
+  <option value="Regular">Regular</option>
+
+</select>
+
+      </div>
+      <%= f.submit "Post", class: "btn btn-primary" %>
+
+    <% end %>
+
+

@@ -7,134 +7,153 @@
       </h2>
         		<div id="articles" class="clearfix">
         <article>
-                    <%= link_to image_tag("p1.jpg", alt: "Pianos")%>
-            <h3>Piano 1</h3>
+                    <%= link_to image_tag("p6.jpg", alt: "Pianos")%>
+              <h3>Piano 1</h3>
             <ul>
-            <li>Brand: Baldwin</li>
-            <li>Price: €3000</li>
+            <li>Brand: <%= Piano.find(1).brand %></li>
+            <li>Price: €<%= Piano.find(1).price %></li>
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Type: Grand</li>
-                  <li>Colour: Black</li>
-                  <li>Keys: 144</li>
+                  <li>Keys: <%= Piano.find(1).keys %></li>
+                  <li>Type: <%= Piano.find(1).pianotype %></li>
+                  <li>Colour:  <%= Piano.find(1).colour %></li>
                 </ul>
               </li>
                 </ul>
             <p></p>
-                    <%= link_to "TBA","", class: "btn btn-lg btn-primary" %>
+                        <% if logged_in? %>
+                    <%= link_to "Buy Now", Piano.find(1), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
 
             </article>
         <article>
-<%= link_to image_tag("p2.jpg", alt: "Pianos")%>
+<%= link_to image_tag("p5.jpg", alt: "Pianos")%>
             <h3>Piano 2</h3>
             <ul>
-            <li>Brand: Yamaha </li>
-                    <li>Price: €850</li>
+            <li>Brand: <%= Piano.find(2).brand %></li>
+            <li>Price: €<%= Piano.find(2).price %></li>
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Type: Keyboard</li>
-                  <li>Colour: Brown</li>
-                  <li>Keys: 88</li>
+                  <li>Keys: <%= Piano.find(2).keys %></li>
+                  <li>Type: <%= Piano.find(2).pianotype %></li>
+                  <li>Colour:  <%= Piano.find(2).colour %></li>
                 </ul>
               </li>
                 </ul>
             <p></p>
-                    <%= link_to "TBA","", class: "btn btn-lg btn-primary" %>
-
+                        <% if logged_in? %>
+                    <%= link_to "Buy Now", Piano.find(2), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
 </article>
 <article>
-             <%= link_to image_tag("p3.jpg", alt: "Pianos")%>
+             <%= link_to image_tag("p4.jpg", alt: "Pianos")%>
     <h3>Piano 3</h3>
-    <ul>
-    <li>Brand: Roland </li>
-    <li>Price: €1200 </li>
-         <li class="dropdown">
+            <ul>
+            <li>Brand: <%= Piano.find(3).brand %></li>
+            <li>Price: €<%= Piano.find(3).price %></li>
+                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Type: Grand</li>
-                  <li>Colour: Black</li>
-                  <li>Keys: 102</li>
+                  <li>Keys: <%= Piano.find(3).keys %></li>
+                  <li>Type: <%= Piano.find(3).pianotype %></li>
+                  <li>Colour:  <%= Piano.find(3).colour %></li>
                 </ul>
               </li>
-        </ul>
-    <p></p>
-                    <%= link_to "TBA","", class: "btn btn-lg btn-primary" %>
-
+                </ul>
+            <p></p>
+                        <% if logged_in? %>
+                    <%= link_to "Buy Now", Piano.find(3), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
             </article>
                     
            <!--########################################################################################################-->   
 
                     
                      <article>
-                    <%= link_to image_tag("p4.jpg", alt: "Pianos")%>
+                    <%= link_to image_tag("p3.jpg", alt: "Pianos")%>
             <h3>Piano 4</h3>
-                         <ul>
-                         <li>Brand: Yamaha </li>
-             <li>Price: €400</li>
-                              <li class="dropdown">
+            <ul>
+            <li>Brand: <%= Piano.find(4).brand %></li>
+            <li>Price: €<%= Piano.find(4).price %></li>
+                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Type: Keyboard</li>
-                  <li>Colour: Grey</li>
-                  <li>Keys: 66</li>
+                  <li>Keys: <%= Piano.find(4).keys %></li>
+                  <li>Type: <%= Piano.find(4).pianotype %></li>
+                  <li>Colour:  <%= Piano.find(4).colour %></li>
                 </ul>
               </li>
-                    </ul>
+                </ul>
             <p></p>
-                    <%= link_to "TBA","", class: "btn btn-lg btn-primary" %>
-
+                        <% if logged_in? %>
+                    <%= link_to "Buy Now", Piano.find(4), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
             </article>
         <article>
-<%= link_to image_tag("p5.jpg", alt: "Pianos")%>
+<%= link_to image_tag("p2.jpg", alt: "Pianos")%>
             <h3>Piano 5</h3>
             <ul>
-             <li>Brand: Chavanne </li>
-             <li> Price: €900 </li>
-                 <li class="dropdown">
+            <li>Brand: <%= Piano.find(5).brand %></li>
+            <li>Price: €<%= Piano.find(5).price %></li>
+                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Type: Grand</li>
-                  <li>Colour: Brown</li>
-                  <li>Keys: 88</li>
+                  <li>Keys: <%= Piano.find(5).keys %></li>
+                  <li>Type: <%= Piano.find(5).pianotype %></li>
+                  <li>Colour:  <%= Piano.find(5).colour %></li>
                 </ul>
               </li>
                 </ul>
             <p></p>
-                    <%= link_to "TBA","", class: "btn btn-lg btn-primary" %>
-
+                        <% if logged_in? %>
+                    <%= link_to "Buy Now", Piano.find(5), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
 </article>
 <article>
-             <%= link_to image_tag("p6.jpg", alt: "Pianos")%>
-    <h3>Piano 6</h3>
-    <ul>
-    <li>Brand: Royale </li>
-    <li>Price: €2500 </li>
-         <li class="dropdown">
+             <%= link_to image_tag("p1.jpg", alt: "Pianos")%>
+   <h3>Piano 6</h3>
+            <ul>
+            <li>Brand: <%= Piano.find(6).brand %></li>
+            <li>Price: €<%= Piano.find(6).price %></li>
+                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Type: Grand/Keyboard Combo</li>
-                  <li>Colour: Black</li>
-                  <li>Keys: 102</li>
+                  <li>Keys: <%= Piano.find(6).keys %></li>
+                  <li>Type: <%= Piano.find(6).pianotype %></li>
+                  <li>Colour:  <%= Piano.find(6).colour %></li>
                 </ul>
               </li>
-        </ul>
-    <p></p>
-                    <%= link_to "TBA","", class: "btn btn-lg btn-primary" %>
-
+                </ul>
+            <p></p>
+                        <% if logged_in? %>
+                    <%= link_to "Buy Now", Piano.find(6), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
             </article>
         </div>
 

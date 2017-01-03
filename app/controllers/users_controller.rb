@@ -7,6 +7,9 @@
         @user = User.find(params[:id])
            @feedbacks = @user.feedbacks
           @purchases = @user.purchases
+                    @acc_purchases = @user.acc_purchases
+          @piano_purchases = @user.piano_purchases
+
 
       end
       
@@ -34,8 +37,8 @@
                                   :password, :password_confirmation)
         @user = User.new(secure_params)
         if @user.save
-             remember @user       #  NEW LINE
-      flash[:success] = "Welcome to MusicMarket!"    # NEW LINE
+             remember @user       
+      flash[:success] = "Welcome to MusicMarket!"    
            redirect_to root_path
         else
  render 'new' 

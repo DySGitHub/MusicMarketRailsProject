@@ -1,0 +1,23 @@
+  <%= form_for AccPurchase.new do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+      <div class="field">
+          <p></p>
+                  <%= f.label "Accessory ID" %>
+                    <p></p>
+
+        <%= f.text_area :accid, :value => Accessory.find(params[:id]).id, :readonly => true %>
+        <%= f.text_area :address, placeholder: "Address" %>
+        <%= f.text_area :country, placeholder: "Country" %>
+        <%= f.label "Delivery Options" %>
+           <select name="acc_purchase[delivery]">
+  <option value="Express" selected="selected">Express</option>
+  <option value="Regular">Regular</option>
+
+</select>
+
+      </div>
+      <%= f.submit "Post", class: "btn btn-primary" %>
+
+    <% end %>
+
+

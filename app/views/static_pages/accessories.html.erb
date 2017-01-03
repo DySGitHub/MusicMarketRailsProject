@@ -10,125 +10,143 @@
                     <%= link_to image_tag("a1.jpg", alt: "Accessories")%>
                 <h3>Accessory 1</h3>
             <ul>
-            <li>Brand: Fender</li>
-            <li>Price: €20</li>
+            <li>Brand: <%= Accessory.find(1).brand %></li>
+            <li>Price: €<%= Accessory.find(1).price %></li>
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Type: Guitar Pick</li>
-                  <li>Colour: Brown</li>
+                  <li>Type: <%= Accessory.find(1).accessorytype %></li>
+                  <li>Colour:  <%= Accessory.find(1).colour %></li>
                 </ul>
               </li>
                 </ul>
             <p></p>
-                    <%= link_to "TBA","", class: "btn btn-lg btn-primary" %>
+                        <% if logged_in? %>
+                    <%= link_to "Buy Now", Accessory.find(1), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
             </article>
                     
         <article>
 <%= link_to image_tag("a2.jpg", alt: "Accessories")%>
             <h3>Accessory 2</h3>
-            <ul>
-            <li>Brand: Generic </li>
-                    <li>Price: €50</li>
+             <ul>
+            <li>Brand: <%= Accessory.find(2).brand %></li>
+            <li>Price: €<%= Accessory.find(2).price %></li>
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Type: Piano Cover</li>
-                  <li>Colour: Grey</li>
+                  <li>Type: <%= Accessory.find(2).accessorytype %></li>
+                  <li>Colour:  <%= Accessory.find(2).colour %></li>
                 </ul>
               </li>
                 </ul>
             <p></p>
-                    <%= link_to "TBA","", class: "btn btn-lg btn-primary" %>
-
+                        <% if logged_in? %>
+                    <%= link_to "Buy Now", Accessory.find(2), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
 </article>
 <article>
              <%= link_to image_tag("a3.jpg", alt: "Accessories")%>
     <h3>Accessory 3</h3>
     <ul>
-    <li>Brand: Warwick </li>
-    <li>Price: €40 </li>
-         <li class="dropdown">
+            <li>Brand: <%= Accessory.find(3).brand %></li>
+            <li>Price: €<%= Accessory.find(3).price %></li>
+                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Type: Guitar Bag</li>
-                  <li>Colour: Black</li>
+                  <li>Type: <%= Accessory.find(3).accessorytype %></li>
+                  <li>Colour:  <%= Accessory.find(3).colour %></li>
                 </ul>
               </li>
-        </ul>
-    <p></p>
-                    <%= link_to "TBA","", class: "btn btn-lg btn-primary" %>
-
+                </ul>
+            <p></p>
+                        <% if logged_in? %>
+                    <%= link_to "Buy Now", Accessory.find(3), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
             </article>
                     
-           <!--########################################################################################################-->   
 
                     
                      <article>
                     <%= link_to image_tag("a4.jpg", alt: "Accessories")%>
             <h3>Accessory 4</h3>
-                         <ul>
-                         <li>Brand: Roland </li>
-             <li>Price: €150</li>
-                              <li class="dropdown">
+                 <ul>
+            <li>Brand: <%= Accessory.find(4).brand %></li>
+            <li>Price: €<%= Accessory.find(4).price %></li>
+                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Type: Piano Seat</li>
-                  <li>Colour: Black</li>
+                  <li>Type: <%= Accessory.find(4).accessorytype %></li>
+                  <li>Colour:  <%= Accessory.find(4).colour %></li>
                 </ul>
               </li>
-                    </ul>
+                </ul>
             <p></p>
-                    <%= link_to "TBA","", class: "btn btn-lg btn-primary" %>
-
+                        <% if logged_in? %>
+                    <%= link_to "Buy Now", Accessory.find(4), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
             </article>
         <article>
 <%= link_to image_tag("a5.jpg", alt: "Accessories")%>
             <h3>Accessory 5</h3>
-            <ul>
-             <li>Brand: Yamaha </li>
-             <li> Price: €100 </li>
-                 <li class="dropdown">
+          <ul>
+            <li>Brand: <%= Accessory.find(5).brand %></li>
+            <li>Price: €<%= Accessory.find(5).price %></li>
+                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Type: Guitar Box</li>
-                  <li>Colour: Grey</li>
+                  <li>Type: <%= Accessory.find(5).accessorytype %></li>
+                  <li>Colour:  <%= Accessory.find(5).colour %></li>
                 </ul>
               </li>
                 </ul>
             <p></p>
-                    <%= link_to "TBA","", class: "btn btn-lg btn-primary" %>
-
+                        <% if logged_in? %>
+                    <%= link_to "Buy Now", Accessory.find(5), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
 </article>
 <article>
              <%= link_to image_tag("a6.jpg", alt: "Accessories")%>
     <h3>Accessory 6</h3>
-    <ul>
-    <li>Brand: Jim Dunlop </li>
-    <li>Price: €15 </li>
-         <li class="dropdown">
+  <ul>
+            <li>Brand: <%= Accessory.find(6).brand %></li>
+            <li>Price: €<%= Accessory.find(6).price %></li>
+                <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Extra Info <b class="caret"></b>
                 </a>
               <ul class="dropdown-menu">
-                  <li>Type: Guitar Pick</li>
-                  <li>Colour: Brown</li>
+                  <li>Type: <%= Accessory.find(6).accessorytype %></li>
+                  <li>Colour:  <%= Accessory.find(6).colour %></li>
                 </ul>
               </li>
-        </ul>
-    <p></p>
-                    <%= link_to "TBA","", class: "btn btn-lg btn-primary" %>
-
+                </ul>
+            <p></p>
+                        <% if logged_in? %>
+                    <%= link_to "Buy Now", Accessory.find(6), class: "btn btn-lg btn-primary" %>
+                        <% else %>
+                                <%= link_to "Buy Now", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
             </article>
         </div>
 

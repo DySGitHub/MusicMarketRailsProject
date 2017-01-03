@@ -6,16 +6,24 @@ User.create(name:'Alex Jones', email:'AlexJones@hotmail.com', password: "AlexPas
 user = User.find(1)
 user.feedbacks.create(rating: 8, content: 'Excellent to Deal With.')
 
+user = User.find(3)
+user.feedbacks.create(rating: 5, content: 'Acceptible Expirence.')
+
 
 user = User.find(1)
 user.purchases.create(delivery:'Express', address: '123 Fake Street', country: 'Ireland', guitarid: 2)
-user.purchases.create(delivery:'Regular', address: '13 Ave Street', country: 'UK', guitarid: 5)
+user.purchases.create(delivery:'Regular', address: '13 Clove Road', country: 'UK', guitarid: 5)
+user.piano_purchases.create(delivery:'Regular', address: '29 Mi Ave', country: 'UK', pianoid: 1)
 user = User.find(2)
 user.purchases.create(delivery:'Express', address: '52 Ariole Road', country: 'France', guitarid: 3)
+user.piano_purchases.create(delivery:'Regular', address: '13 Ave Street', country: 'Germany', pianoid: 6)
+user.acc_purchases.create(delivery:'Regular', address: 'Arisha Ave', country: 'UK', accid: 4)
+
 user = User.find(3)
 user.purchases.create(delivery:'Regular', address: '3 City Ave', country: 'UK', guitarid: 1)
 user.purchases.create(delivery:'Express', address: '5 Town Road', country: 'Ireland', guitarid: 4)
-user.purchases.create(delivery:'Regular', address: '212 Anderson Ave', country: 'Spain', guitarid: 6)
+user.acc_purchases.create(delivery:'Regular', address: '1 Espana Street', country: 'Spain', accid: 4)
+
 
 
 Accessory.create(brand: 'Fender', accessorytype: 'Guitar Pick', colour: 'Brown', price: 20)

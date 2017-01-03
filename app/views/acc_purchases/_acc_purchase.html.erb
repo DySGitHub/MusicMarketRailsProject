@@ -1,0 +1,17 @@
+<li id="acc_purchase-<%= acc_purchase.id %>">
+      <span class="user"><%= link_to acc_purchase.user.name, acc_purchase.user %></span>
+    <p></p>
+              <span class="accid">Guitar: <%= Accessory.find(acc_purchase.accid).id %></span>
+    <p></p>
+          <span class="accbrand">Brand: <%= Accessory.find(acc_purchase.accid).brand %></span>
+          <span class="acctype">Type: <%= Accessory.find(acc_purchase.accid).accessorytype %></span>
+          <span class="accprice">Price: €<%=  Accessory.find(acc_purchase.accid).price %></span>
+<p></p>
+      <span class="delivery">Delivery:<%= acc_purchase.delivery %></span>
+          <span class="address">Address: <%= acc_purchase.address %></span>
+      <span class="country">, <%= acc_purchase.country %></span>
+    <p></p>
+    
+
+      
+    </li>

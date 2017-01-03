@@ -34,9 +34,23 @@
              <% end %>
 
         <% if @user.purchases.any? %>
-          <h3>Purchases (<%= @user.purchases.count %>)</h3>
+          <h3>Guitar Purchases (<%= @user.purchases.count %>)</h3>
           <ol class="purchases">
             <%= render @purchases %>
+          </ol>
+        <% end %>
+
+ <% if @user.acc_purchases.any? %>
+          <h3>Accessory Purchases (<%= @user.acc_purchases.count %>)</h3>
+          <ol class="purchases">
+            <%= render @acc_purchases %>
+          </ol>
+        <% end %>
+
+ <% if @user.piano_purchases.any? %>
+          <h3>Piano Purchases (<%= @user.piano_purchases.count %>)</h3>
+          <ol class="purchases">
+            <%= render @piano_purchases %>
           </ol>
         <% end %>
 

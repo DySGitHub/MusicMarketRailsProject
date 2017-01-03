@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c42d6f10-cf92-4fcd-b3aa-4b4b47717016" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new/MusicMarketRubyProject" afterPath="$PROJECT_DIR$/new/MusicMarketRubyProject" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/15820520_1475486052476488_838149655_n.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/rails.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/new/MusicMarketRubyProject" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/new/heroku_url.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/users_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/users_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/accessories.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/accessories.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -110,7 +116,14 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-              <folding />
+              <folding>
+                <marker date="1483408893657" expanded="true" signature="14:1609" ph=" ... end" />
+                <marker date="1483408893657" expanded="true" signature="922:978" ph=" ... end" />
+                <marker date="1483408893657" expanded="true" signature="1012:1166" ph=" ... end" />
+                <marker date="1483408893657" expanded="true" signature="1209:1294" ph=" ... end" />
+                <marker date="1483408893657" expanded="true" signature="1323:1384" ph=" ... end" />
+                <marker date="1483408893657" expanded="true" signature="1402:1468" ph=" ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -338,16 +351,16 @@
       <updated>1482874373644</updated>
       <workItem from="1482874377679" duration="981000" />
       <workItem from="1483388281792" duration="772000" />
-      <workItem from="1483407581775" duration="262000" />
+      <workItem from="1483407581775" duration="861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2015000" />
+    <option name="totallyTimeSpent" value="2614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -392,7 +405,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
+          <folding>
+            <marker date="1483408893657" expanded="true" signature="14:1609" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="922:978" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="1012:1166" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="1209:1294" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="1323:1384" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="1402:1468" ph=" ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -416,7 +436,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
+          <folding>
+            <marker date="1483408893657" expanded="true" signature="14:1609" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="922:978" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="1012:1166" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="1209:1294" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="1323:1384" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="1402:1468" ph=" ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -432,7 +459,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
+          <folding>
+            <marker date="1483408893657" expanded="true" signature="14:1609" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="922:978" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="1012:1166" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="1209:1294" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="1323:1384" ph=" ... end" />
+            <marker date="1483408893657" expanded="true" signature="1402:1468" ph=" ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
