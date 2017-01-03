@@ -19,4 +19,6 @@ def create
               @purchase = current_user.purchases.find_by(id: params[:id])
               redirect_to root_url if @purchase.nil?
             end
+    
+   
 end

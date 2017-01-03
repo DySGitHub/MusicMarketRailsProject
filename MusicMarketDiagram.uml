@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>RailsDependency</ID>
+  <OriginalElement>User</OriginalElement>
+  <nodes>
+    <node x="0.0" y="15.430555555555543">User</node>
+    <node x="1.0" y="587.5555555555554">Guitar</node>
+    <node x="680.0" y="283.3472222222222">ApplicationRecord</node>
+    <node x="371.0" y="327.49999999999994">Piano</node>
+    <node x="359.5" y="169.49999999999994">Accessory</node>
+    <node x="360.0" y="10.499999999999943">Feedback</node>
+    <node x="341.0" y="507.49999999999994">Purchase</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="User" target="Purchase">
+      <point x="130.5" y="54.33333333333334" />
+      <point x="-129.5" y="-40.75" />
+    </edge>
+    <edge source="Feedback" target="ApplicationRecord">
+      <point x="110.5" y="-0.0" />
+      <point x="600.0" y="69.99999999999994" />
+      <point x="-66.0" y="-7.5" />
+    </edge>
+    <edge source="Accessory" target="ApplicationRecord">
+      <point x="111.0" y="-0.0" />
+      <point x="600.0" y="228.49999999999994" />
+      <point x="-66.0" y="-2.5" />
+    </edge>
+    <edge source="Guitar" target="Purchase">
+      <point x="129.5" y="-40.75" />
+      <point x="-129.5" y="40.75" />
+    </edge>
+    <edge source="User" target="ApplicationRecord">
+      <point x="130.5" y="-54.333333333333314" />
+      <point x="341.0" y="0.0" />
+      <point x="600.0" y="0.0" />
+      <point x="-66.0" y="-12.5" />
+    </edge>
+    <edge source="Purchase" target="ApplicationRecord">
+      <point x="129.5" y="-0.0" />
+      <point x="-66.0" y="7.5" />
+    </edge>
+    <edge source="User" target="Feedback">
+      <point x="130.5" y="-0.0" />
+      <point x="341.0" y="69.99999999999994" />
+      <point x="-110.5" y="-0.0" />
+    </edge>
+    <edge source="Guitar" target="ApplicationRecord">
+      <point x="129.5" y="40.75" />
+      <point x="341.0" y="694.6805555555554" />
+      <point x="600.0" y="694.6805555555554" />
+      <point x="-66.0" y="12.5" />
+    </edge>
+    <edge source="Piano" target="ApplicationRecord">
+      <point x="99.5" y="-0.0" />
+      <point x="600.0" y="397.49999999999994" />
+      <point x="-66.0" y="2.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7470817120622568" x="406.0" y="375.5" />
+  <SelectedNodes>
+    <node>User</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Association fields</Category>
+    <Category>Migration fields</Category>
+  </Categories>
+</Diagram>
+

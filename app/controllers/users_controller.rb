@@ -1,10 +1,21 @@
   class UsersController < ApplicationController
-
+  before_action :logged_in_user, only: [:index, :edit, :update, :show]
+ 
       def show
         @user = User.find(params[:id])
            @feedbacks = @user.feedbacks
           @purchases = @user.purchases
+
       end
+      
+     
+
+      def index
+              @users = User.all
+
+      end
+      
+      
 
       def new
         @user = User.new
@@ -44,6 +55,8 @@
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation)
     end
+      
+     
       
       
   end

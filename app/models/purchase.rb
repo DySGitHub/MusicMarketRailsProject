@@ -9,4 +9,11 @@ class Purchase < ApplicationRecord
 
 
           default_scope -> { order(created_at: :asc) }
+  
+
+def self.search(search)
+  where("country LIKE ?", "%#{search}%") 
+  where("address LIKE ?", "%#{search}%")
+end
+    
 end

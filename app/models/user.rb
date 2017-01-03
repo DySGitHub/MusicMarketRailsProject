@@ -40,6 +40,13 @@
         def feed
                 Feedback.where("user_id = ?", id)
             end
+def self.search(search)
+if search
+    find(:all, :conditions => ['name LIKE ?', "%#{:search}%"])
+  else
+"    find()
+"  end
+      end
     end
 
         
