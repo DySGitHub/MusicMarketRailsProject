@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170103022018) do
 
   create_table "acc_purchases", force: :cascade do |t|
@@ -33,10 +34,16 @@ ActiveRecord::Schema.define(version: 20170103022018) do
   end
 
   create_table "feedbacks", force: :cascade do |t|
+=======
+ActiveRecord::Schema.define(version: 20161116093156) do
+
+  create_table "microposts", force: :cascade do |t|
+>>>>>>> 513d3798b282aa688b69d699e9b0a49ca679abf0
     t.text     "content"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
     t.integer  "rating"
     t.index ["user_id", "created_at"], name: "index_feedbacks_on_user_id_and_created_at"
     t.index ["user_id"], name: "index_feedbacks_on_user_id"
@@ -82,6 +89,10 @@ ActiveRecord::Schema.define(version: 20170103022018) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_purchases_on_user_id"
+=======
+    t.index ["user_id", "created_at"], name: "index_microposts_on_user_id_and_created_at"
+    t.index ["user_id"], name: "index_microposts_on_user_id"
+>>>>>>> 513d3798b282aa688b69d699e9b0a49ca679abf0
   end
 
   create_table "users", force: :cascade do |t|

@@ -1,6 +1,4 @@
-# SSD 4 Web Server Programming: Sample application
+# SSD 4 Web Server Programming: Rails Project Application
 
-    The sample application is taken from the
-    [*Ruby on Rails Tutorial:
-    Learn Web Development with Rails*](http://www.railstutorial.org/)
-    by [Michael Hartl](http://www.michaelhartl.com/)."# MusicMarketRailsProject" 
+    This Application was developed for Web Server Programming Project
+    # MusicMarketRailsProject" 

@@ -1,5 +1,6 @@
     class User < ApplicationRecord
                 before_save { self.email = email.downcase }
+<<<<<<< HEAD
         
       attr_accessor :remember_token
         has_many :feedbacks, dependent: :destroy
@@ -8,6 +9,11 @@
          has_many :acc_purchases
 
       validates :name, presence: true, length: { in: 5..30 }
+=======
+has_many :microposts, dependent: :destroy
+        attr_accessor :remember_token
+      validates :name, presence: true, length: { in: 9..30 }
+>>>>>>> 513d3798b282aa688b69d699e9b0a49ca679abf0
       VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
       validates :email, presence: true, 
                         format: { with: VALID_EMAIL_REGEX },
@@ -38,6 +44,9 @@
          def forget
           update_attribute(:remember_digest, nil)
        end
+            def feed
+                Micropost.where("user_id = ?", id)
+            end
 
         def feed
                 Feedback.where("user_id = ?", id)

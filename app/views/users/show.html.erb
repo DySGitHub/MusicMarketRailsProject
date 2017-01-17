@@ -16,6 +16,7 @@
       </div>
         </section>
       </aside>
+<<<<<<< HEAD
     </div>
 
 <% if @user.feedbacks.empty? %>
@@ -56,3 +57,14 @@
 
 
       </div>
+=======
+        <div class="col-md-8">
+        <% if @user.microposts.any? %>
+          <h3>Microposts (<%= @user.microposts.count %>)</h3>
+          <ol class="microposts">
+            <%= render @microposts %>
+          </ol>
+        <% end %>
+      </div>
+    </div>
+>>>>>>> 513d3798b282aa688b69d699e9b0a49ca679abf0

@@ -13,11 +13,15 @@
       get    '/login',   to: 'sessions#new'
       post   '/login',   to: 'sessions#create'
       delete '/logout',  to: 'sessions#destroy'
+<<<<<<< HEAD
       ############################################
      
       ############################################
   
 
+=======
+      resources :microposts, only: [:create, :destroy]
+>>>>>>> 513d3798b282aa688b69d699e9b0a49ca679abf0
       resources :users
       resources :guitars
       resources :pianos

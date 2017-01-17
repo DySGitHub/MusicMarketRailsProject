@@ -5,6 +5,7 @@
  
       def show
         @user = User.find(params[:id])
+<<<<<<< HEAD
            @feedbacks = @user.feedbacks
           @purchases = @user.purchases
                     @acc_purchases = @user.acc_purchases
@@ -18,6 +19,9 @@
       def index
               @users = User.all
 
+=======
+           @microposts = @user.microposts
+>>>>>>> 513d3798b282aa688b69d699e9b0a49ca679abf0
       end
       
       

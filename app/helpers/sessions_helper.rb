@@ -7,6 +7,13 @@
         cookies.permanent[:remember_token] = user.remember_token
       end
      
+     def logged_in_user
+        unless logged_in?
+          flash[:notice] = "Please log in"
+          redirect_to login_url
+        end
+    end 
+     
      def current_user
         if (user_id = cookies.signed[:user_id])
            user = User.find_by(id: user_id)
